@@ -23,8 +23,6 @@ public class frmAgregarCliente extends JFrame {
 	private JTextField textNombreCliente;
 	private JButton btnRegistrarReserva;
 	private JTextField textFechaDía;
-	private JTextField textFechaMes;
-	private JTextField textFechaAnio;
 
 	public frmAgregarCliente() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -94,7 +92,7 @@ public class frmAgregarCliente extends JFrame {
 		textFechaDía.setToolTipText("Día");
 		textFechaDía.setFont(new Font("Ebrima", Font.PLAIN, 14));
 		textFechaDía.setColumns(10);
-		textFechaDía.setBounds(218, 154, 41, 20);
+		textFechaDía.setBounds(218, 154, 161, 20);
 		contentPane.add(textFechaDía);
 		
 		JLabel lblFechaNacimiento = new JLabel("Fecha de nacimiento:");
@@ -103,20 +101,6 @@ public class frmAgregarCliente extends JFrame {
 		lblFechaNacimiento.setFont(new Font("Ebrima", Font.PLAIN, 15));
 		lblFechaNacimiento.setBounds(19, 154, 178, 20);
 		contentPane.add(lblFechaNacimiento);
-		
-		textFechaMes = new JTextField();
-		textFechaMes.setToolTipText("Mes");
-		textFechaMes.setFont(new Font("Ebrima", Font.PLAIN, 14));
-		textFechaMes.setColumns(10);
-		textFechaMes.setBounds(270, 154, 41, 20);
-		contentPane.add(textFechaMes);
-		
-		textFechaAnio = new JTextField();
-		textFechaAnio.setToolTipText("Año");
-		textFechaAnio.setFont(new Font("Ebrima", Font.PLAIN, 14));
-		textFechaAnio.setColumns(10);
-		textFechaAnio.setBounds(323, 154, 58, 20);
-		contentPane.add(textFechaAnio);
 		btnRegistrarReserva.addActionListener(new ActionListener() {
         	public void actionPerformed(ActionEvent e) {
         		

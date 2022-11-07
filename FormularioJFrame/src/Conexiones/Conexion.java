@@ -10,7 +10,7 @@ public class Conexion
 	Connection ccn = null;
 	Statement st = null;
 	
-	public Conexion()
+	/*ublic Conexion()
 	{
 		try
 		{
@@ -18,8 +18,7 @@ public class Conexion
 		}
 		catch(SQLException e)
 		{
-			dfskdfsñdkfsdñklfdsl
+			
 		}
+*/
 	}
-
-}

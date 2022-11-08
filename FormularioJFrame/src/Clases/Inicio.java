@@ -6,6 +6,9 @@ import Formularios.frmMenu;
 
 public class Inicio {
 	
+	public static String Cliente[][] = new String [5][4];
+	public static String Habitaciones[][] = new String [15][4];
+	public static String Reserva[][] = new String [10][4];
 	String matrizClientes [][] = new String [5][4];
     public static void main(String[] ar) {
     	int respuesta = JOptionPane.showConfirmDialog(null,"¿Desea ingresar al sistema?");
@@ -14,8 +17,5 @@ public class Inicio {
         	frmMenu.setVisible(true);
         }
     }    
-    
-
-
 }
 

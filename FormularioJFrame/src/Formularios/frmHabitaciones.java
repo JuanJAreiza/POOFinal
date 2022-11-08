@@ -1,6 +1,9 @@
 package Formularios;
 
 import javax.swing.*;
+
+import Clases.Inicio;
+
 import java.awt.event.*;
 import java.awt.Font;
 import java.awt.Color;
@@ -8,6 +11,23 @@ import java.awt.Color;
 public class frmHabitaciones extends JFrame implements ActionListener{
 	
     public frmHabitaciones() {
+    	
+    	Inicio.Habitaciones[0][0]= "1A";
+    	Inicio.Habitaciones[0][1]= "Simple";
+    	Inicio.Habitaciones[0][2]= "1'000.000";
+    	Inicio.Habitaciones[0][3]= "5";
+    	
+    	Inicio.Habitaciones[1][0]= "2A";
+    	Inicio.Habitaciones[1][1]= "Doble";
+    	Inicio.Habitaciones[1][2]= "2'000.000";
+    	Inicio.Habitaciones[1][3]= "5";
+    	
+    	Inicio.Habitaciones[2][0]= "3A";
+    	Inicio.Habitaciones[2][1]= "Matrimonial";
+    	Inicio.Habitaciones[2][2]= "3'000.000";
+    	Inicio.Habitaciones[2][3]= "5";
+    	
+    	
     	setTitle("Habitaciones");
     	setBounds(750, 300, 560, 457);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

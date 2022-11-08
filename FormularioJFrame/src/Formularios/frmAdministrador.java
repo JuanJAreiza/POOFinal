@@ -54,7 +54,9 @@ public class frmAdministrador extends JFrame {
 		contentPane.add(btnCambiarDescuento);
 		btnCambiarDescuento.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-
+				frmCambiarDescuento frmCambiarDescuento = new frmCambiarDescuento();
+				frmCambiarDescuento.setVisible(true);
+				setVisible(false);
 			}
 		});
 

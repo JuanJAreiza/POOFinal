@@ -26,7 +26,7 @@ public class frmCambiarDescuento extends JFrame {
 	private JTextField textDescuentoActual;
 
 	public frmCambiarDescuento() {
-		setTitle("Cambiar precio habitación");
+		setTitle("Cambiar Descuento");
     	setBounds(750, 300, 440, 332);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		contentPane = new JPanel();

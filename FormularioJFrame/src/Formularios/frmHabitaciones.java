@@ -54,10 +54,6 @@ public class frmHabitaciones extends JFrame implements ActionListener{
         btnHabMatrimonial.setBounds(82, 201, 201, 42);
         getContentPane().add(btnHabMatrimonial);
         
-        JLabel label = new JLabel("New label");
-        label.setBounds(384, 46, 45, 13);
-        getContentPane().add(label);
-        
         JLabel lblDisponibilidad = new JLabel("Disponibilidad:");
         lblDisponibilidad.setHorizontalAlignment(SwingConstants.CENTER);
         lblDisponibilidad.setForeground(Color.WHITE);

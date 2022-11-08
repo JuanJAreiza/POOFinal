@@ -32,11 +32,11 @@ public class frmEliminarReserva extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JLabel lblBuscarCdula = new JLabel("Ingrese la cédula de la reserva que desea eliminar:");
+		JLabel lblBuscarCdula = new JLabel("Ingrese la cédula de la reserva que desea eliminar");
 		lblBuscarCdula.setForeground(Color.WHITE);
-		lblBuscarCdula.setHorizontalAlignment(SwingConstants.RIGHT);
+		lblBuscarCdula.setHorizontalAlignment(SwingConstants.CENTER);
 		lblBuscarCdula.setFont(new Font("Ebrima", Font.PLAIN, 15));
-		lblBuscarCdula.setBounds(-35, 50, 420, 20);
+		lblBuscarCdula.setBounds(10, 62, 406, 29);
 		contentPane.add(lblBuscarCdula);
 		
 		textCedula = new JTextField();
@@ -55,7 +55,7 @@ public class frmEliminarReserva extends JFrame {
         	}
         });
 		
-		btnEliminarReserva = new JButton("Eliminar");
+		btnEliminarReserva = new JButton("Cambiar");
 		btnEliminarReserva.setFont(new Font("Ebrima", Font.BOLD, 15));
 		btnEliminarReserva.setBounds(84, 197, 121, 29);
 		contentPane.add(btnEliminarReserva);

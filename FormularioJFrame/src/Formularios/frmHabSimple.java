@@ -48,7 +48,7 @@ public class frmHabSimple extends JFrame {
 		
 		JButton btnVolver = new JButton("Volver");
 		btnVolver.setFont(new Font("Ebrima", Font.BOLD, 15));
-		btnVolver.setBounds(233, 207, 121, 29);
+		btnVolver.setBounds(156, 234, 121, 29);
 		contentPane.add(btnVolver);
 		
 		JLabel lblNewLabel = new JLabel("New label");

@@ -16,7 +16,7 @@ public class frmHabitaciones extends JFrame implements ActionListener{
         
         JButton btnHabSimple = new JButton("Habitación Simple");
         btnHabSimple.setFont(new Font("Ebrima", Font.BOLD, 15));
-        btnHabSimple.setBounds(170, 71, 201, 42);
+        btnHabSimple.setBounds(82, 71, 201, 42);
         getContentPane().add(btnHabSimple);
         btnHabSimple.addActionListener(new ActionListener() {
         	public void actionPerformed(ActionEvent e) {
@@ -28,7 +28,7 @@ public class frmHabitaciones extends JFrame implements ActionListener{
         
         JButton btnHabDoble = new JButton("Habitación Doble");
         btnHabDoble.setFont(new Font("Ebrima", Font.BOLD, 15));
-        btnHabDoble.setBounds(170, 136, 201, 42);
+        btnHabDoble.setBounds(82, 136, 201, 42);
         getContentPane().add(btnHabDoble);
         btnHabDoble.addActionListener(new ActionListener() {
         	public void actionPerformed(ActionEvent e) {
@@ -51,8 +51,40 @@ public class frmHabitaciones extends JFrame implements ActionListener{
         
         JButton btnHabMatrimonial = new JButton("Habitación Matrimonial");
         btnHabMatrimonial.setFont(new Font("Ebrima", Font.BOLD, 15));
-        btnHabMatrimonial.setBounds(170, 201, 201, 42);
+        btnHabMatrimonial.setBounds(82, 201, 201, 42);
         getContentPane().add(btnHabMatrimonial);
+        
+        JLabel label = new JLabel("New label");
+        label.setBounds(384, 46, 45, 13);
+        getContentPane().add(label);
+        
+        JLabel lblDisponibilidad = new JLabel("Disponibilidad:");
+        lblDisponibilidad.setHorizontalAlignment(SwingConstants.CENTER);
+        lblDisponibilidad.setForeground(Color.WHITE);
+        lblDisponibilidad.setFont(new Font("Ebrima", Font.PLAIN, 15));
+        lblDisponibilidad.setBounds(335, 46, 139, 20);
+        getContentPane().add(lblDisponibilidad);
+        
+        JLabel lblDisponibilidadSimple = new JLabel("5");
+        lblDisponibilidadSimple.setHorizontalAlignment(SwingConstants.CENTER);
+        lblDisponibilidadSimple.setForeground(Color.WHITE);
+        lblDisponibilidadSimple.setFont(new Font("Ebrima", Font.PLAIN, 15));
+        lblDisponibilidadSimple.setBounds(335, 88, 139, 20);
+        getContentPane().add(lblDisponibilidadSimple);
+        
+        JLabel lblDisponibilidadDoble = new JLabel("5");
+        lblDisponibilidadDoble.setHorizontalAlignment(SwingConstants.CENTER);
+        lblDisponibilidadDoble.setForeground(Color.WHITE);
+        lblDisponibilidadDoble.setFont(new Font("Ebrima", Font.PLAIN, 15));
+        lblDisponibilidadDoble.setBounds(335, 153, 139, 20);
+        getContentPane().add(lblDisponibilidadDoble);
+        
+        JLabel lblDisponibilidadMatrimonial = new JLabel("5");
+        lblDisponibilidadMatrimonial.setHorizontalAlignment(SwingConstants.CENTER);
+        lblDisponibilidadMatrimonial.setForeground(Color.WHITE);
+        lblDisponibilidadMatrimonial.setFont(new Font("Ebrima", Font.PLAIN, 15));
+        lblDisponibilidadMatrimonial.setBounds(335, 218, 139, 20);
+        getContentPane().add(lblDisponibilidadMatrimonial);
         btnHabMatrimonial.addActionListener(new ActionListener() {
         	public void actionPerformed(ActionEvent e) {
             	frmHabMatrimonial frmHabMatrimonial = new frmHabMatrimonial();

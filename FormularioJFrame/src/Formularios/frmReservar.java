@@ -98,14 +98,6 @@ public class frmReservar extends JFrame	{
 		
 	}
 	
-	public void Reservar() {
 		
-	for(int i  = 0 ; i <= 5; i++) {
-	 
-		if(matrizClientes[i][0] == textCedula)
 	
-		
-	}
-		
-	}
 }

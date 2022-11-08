@@ -42,7 +42,9 @@ public class frmAdministrador extends JFrame {
 		contentPane.add(btnCamPrecio);
 		btnCamPrecio.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-
+				frmCambiarPrecio frmCambiarPrecio = new frmCambiarPrecio();
+				frmCambiarPrecio.setVisible(true);
+				setVisible(false);
 			}
 		});
 

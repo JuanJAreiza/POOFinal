@@ -15,8 +15,8 @@ import javax.swing.JTextField;
 import javax.swing.JButton;
 import java.awt.Color;
 
-public class frmReservar extends JFrame {
-
+public class frmReservar extends JFrame	{
+	
 	private JPanel contentPane;
 	private JTextField textNumHabitacion;
 	private JTextField textCedula;
@@ -95,6 +95,17 @@ public class frmReservar extends JFrame {
         		
         	}
         });
+		
+	}
+	
+	public void Reservar() {
+		
+	for(int i  = 0 ; i <= 5; i++) {
+	 
+		if(matrizClientes[i][0] == textCedula)
+	
+		
+	}
 		
 	}
 }

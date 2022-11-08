@@ -20,7 +20,6 @@ public class frmHabSimple extends JFrame {
 
 	private JPanel contentPane;
 	private JTextField textPrecioNoche;
-	private JLabel lblNewLabel;
 
 	public frmHabSimple() {
 		setTitle("Habitación simple");
@@ -51,15 +50,16 @@ public class frmHabSimple extends JFrame {
 		btnVolver.setFont(new Font("Ebrima", Font.BOLD, 15));
 		btnVolver.setBounds(233, 207, 121, 29);
 		contentPane.add(btnVolver);
+		
+		JLabel lblNewLabel = new JLabel("New label");
+		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel.setIcon(new ImageIcon(frmHabSimple.class.getResource("/Imagenes/HabSimple.jpg")));
+		lblNewLabel.setBounds(57, 61, 342, 163);
+		contentPane.add(lblNewLabel);
 		btnVolver.addActionListener(new ActionListener() {
         	public void actionPerformed(ActionEvent e) {
     			setVisible(false);
         	}
         });
-		
-		lblNewLabel = new JLabel("New label");
-		lblNewLabel.setIcon(new ImageIcon(frmHabSimple.class.getResource("/Imagenes/Cliente.png")));
-		lblNewLabel.setBounds(146, 74, 161, 115);
-		contentPane.add(lblNewLabel);
 	}
 }

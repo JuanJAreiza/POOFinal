@@ -5,6 +5,9 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+
+import Clases.Inicio;
+
 import javax.swing.JLabel;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
@@ -66,6 +69,7 @@ public class frmReservar extends JFrame	{
 		textCedula.setColumns(10);
 		textCedula.setBounds(234, 102, 161, 20);
 		contentPane.add(textCedula);
+		String Cedula = textCedula.getText();
 		
 		textNombreCliente = new JTextField();
 		textNombreCliente.setFont(new Font("Ebrima", Font.PLAIN, 14));
@@ -98,6 +102,19 @@ public class frmReservar extends JFrame	{
 		
 	}
 	
+	void Reservar(String Cedula) {
+		
+		boolean habitual = false;
+		Inicio ini = new Inicio();
+		
+		for(int i = 0; i<=4; i++) {
+			
+			if(Inicio.Cliente[i][0] == Cedula)
+			{
+				habitual=true;
+			}
+		}
 		
 	
+	}
 }

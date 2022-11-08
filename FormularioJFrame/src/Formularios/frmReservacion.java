@@ -8,6 +8,9 @@ import java.awt.event.ActionListener;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+
+import Clases.Inicio;
+
 import javax.swing.JButton;
 import javax.swing.JMenuBar;
 import javax.swing.JMenu;
@@ -15,6 +18,8 @@ import javax.swing.JMenuItem;
 import java.awt.Font;
 
 public class frmReservacion extends JFrame implements ActionListener{
+	
+	
 
 	public frmReservacion() {
 		setTitle("Menú de reservas");
@@ -131,7 +136,17 @@ public class frmReservacion extends JFrame implements ActionListener{
     			setVisible(false);
         	}
         });
+		
+	
 	}
+	
+
+		
+		
+		
+		
+		
+	
 
 	@Override
 	public void actionPerformed(ActionEvent e) {

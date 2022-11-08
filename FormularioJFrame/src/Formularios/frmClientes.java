@@ -22,7 +22,8 @@ public class frmClientes extends JFrame implements ActionListener{
     	Inicio.Cliente[1][2]= "teotemorboseo@gmail.com";
     	Inicio.Cliente[1][3]= "1999 - 06 - 10";
     	
-    	Inicio.Cliente[2][0]= "1353983652";
+    	Inicio.Cliente[2][0]= "1353983652";+
+    	.
     	Inicio.Cliente[2][1]= "Areiza Mauricio";
     	Inicio.Cliente[2][2]= "areizateareiza@gmail.com";
     	Inicio.Cliente[2][3]= "1998 - 05 - 04";

@@ -8,6 +8,7 @@ import java.awt.Color;
 public class frmClientes extends JFrame implements ActionListener{
 	
     public frmClientes() {
+    	
     	setTitle("Clientes");
     	setBounds(750, 300, 560, 457);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -26,6 +27,14 @@ public class frmClientes extends JFrame implements ActionListener{
         getContentPane().add(btnAgregarCliente);
         
         JButton btnEditarCliente = new JButton("Editar Cliente");
+        btnEditarCliente.addActionListener(new ActionListener() {
+        	public void actionPerformed(ActionEvent e) {
+        		frmEditarCliente EditarCliente = new frmEditarCliente();
+        		EditarCliente.setVisible(true);
+        		setVisible(false);
+        	
+        	}
+        });
         btnEditarCliente.setFont(new Font("Ebrima", Font.BOLD, 15));
         btnEditarCliente.setBounds(170, 200, 201, 42);
         getContentPane().add(btnEditarCliente);
@@ -43,6 +52,13 @@ public class frmClientes extends JFrame implements ActionListener{
         getContentPane().add(btnSalir);
         
         JButton btnVerCliente = new JButton("Ver Cliente");
+        btnVerCliente.addActionListener(new ActionListener() {
+        	public void actionPerformed(ActionEvent e) {
+        		frmVerCliente fmrVerCliente = new frmVerCliente();
+        		fmrVerCliente.setVisible(true);
+        		setVisible(false);	
+        	}
+        });
         btnVerCliente.setFont(new Font("Ebrima", Font.BOLD, 15));
         btnVerCliente.setBounds(170, 136, 201, 42);
         getContentPane().add(btnVerCliente);

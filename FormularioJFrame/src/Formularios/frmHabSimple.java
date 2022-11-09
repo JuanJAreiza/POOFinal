@@ -5,6 +5,9 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+
+import Coco.HSimple;
+
 import javax.swing.JLabel;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
@@ -40,7 +43,14 @@ public class frmHabSimple extends JFrame {
 		lblPrecioNoche.setBounds(37, 31, 161, 20);
 		contentPane.add(lblPrecioNoche);
 		
+		
+		//CREAMOS EL OBJETO HSIMPLE
+		HSimple simple = new HSimple();
+		
 		textPrecioNoche = new JTextField();
+		//LLAMAMOS EL METODO MOSTRAR PRECIO
+		textPrecioNoche.setText(simple.MostrarPrecio());
+		
 		textPrecioNoche.setFont(new Font("Ebrima", Font.PLAIN, 14));
 		textPrecioNoche.setColumns(10);
 		textPrecioNoche.setBounds(218, 31, 106, 20);

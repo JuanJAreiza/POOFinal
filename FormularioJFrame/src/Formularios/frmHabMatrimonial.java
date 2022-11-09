@@ -10,6 +10,8 @@ import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import Coco.HMatrimonial;
+
 import javax.swing.SwingConstants;
 import javax.swing.JTextField;
 import javax.swing.JButton;
@@ -41,7 +43,15 @@ public class frmHabMatrimonial extends JFrame {
 		lblPrecioNoche.setBounds(37, 31, 161, 20);
 		contentPane.add(lblPrecioNoche);
 		
+		
+		
+		//LLAMAMOS A LA CLASE HMATRIMONIAL
+		HMatrimonial HabMatri = new HMatrimonial();
+		
 		textPrecioNoche = new JTextField();
+		//MOSTRAR PRECIO
+		textPrecioNoche.setText(HabMatri.MostrarPrecio());
+		
 		textPrecioNoche.setFont(new Font("Ebrima", Font.PLAIN, 14));
 		textPrecioNoche.setColumns(10);
 		textPrecioNoche.setBounds(218, 31, 106, 20);

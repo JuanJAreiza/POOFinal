@@ -5,6 +5,9 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+
+import Coco.HDoble;
+
 import javax.swing.JLabel;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
@@ -41,7 +44,13 @@ public class frmHabDoble extends JFrame {
 		lblPrecioNoche.setBounds(37, 31, 161, 20);
 		contentPane.add(lblPrecioNoche);
 		
+		
+		
+		HDoble doble = new HDoble();
 		textPrecioNoche = new JTextField();
+		
+		
+		textPrecioNoche.setText(doble.MostrarPrecio());
 		textPrecioNoche.setFont(new Font("Ebrima", Font.PLAIN, 14));
 		textPrecioNoche.setColumns(10);
 		textPrecioNoche.setBounds(218, 31, 106, 20);

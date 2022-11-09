@@ -22,8 +22,8 @@ public class frmClientes extends JFrame implements ActionListener{
     	Inicio.Cliente[1][2]= "teotemorboseo@gmail.com";
     	Inicio.Cliente[1][3]= "1999 - 06 - 10";
     	
-    	Inicio.Cliente[2][0]= "1353983652";+
-    	.
+    	Inicio.Cliente[2][0]= "1353983652";
+    	
     	Inicio.Cliente[2][1]= "Areiza Mauricio";
     	Inicio.Cliente[2][2]= "areizateareiza@gmail.com";
     	Inicio.Cliente[2][3]= "1998 - 05 - 04";
@@ -97,9 +97,11 @@ public class frmClientes extends JFrame implements ActionListener{
         mntmAgregarCliente.setHorizontalAlignment(SwingConstants.LEFT);
         mntmAgregarCliente.setIcon(null);
         mntmAgregarCliente.setFont(new Font("Ebrima", Font.PLAIN, 14));
-        mntmAgregarCliente.addActionListener(new ActionListener() {
-        	public void actionPerformed(ActionEvent e) {
-            	frmCliente frmCliente = new frmCliente();
+        mntmAgregarCliente.addActionListener(new ActionListener() 
+        {
+        	public void actionPerformed(ActionEvent e) 
+        	{
+            	frmClientes frmCliente = new frmClientes();
     			frmCliente.setVisible(true);						//HACE VISIBLE EL CONSTRUCTOR
         	}
         });

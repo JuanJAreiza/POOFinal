@@ -18,8 +18,6 @@ import javax.swing.SwingConstants;
 import javax.swing.JTextField;
 import javax.swing.JButton;
 import java.awt.Color;
-import javax.swing.JCheckBox;
-import javax.swing.JLayeredPane;
 
 public class frmAgregarCliente extends JFrame {
 
@@ -47,19 +45,19 @@ public class frmAgregarCliente extends JFrame {
 		lblEmail.setBounds(20, 112, 178, 20);
 		contentPane.add(lblEmail);
 		
-		JLabel lblCdula = new JLabel("Cédula:");
-		lblCdula.setForeground(Color.WHITE);
-		lblCdula.setHorizontalAlignment(SwingConstants.RIGHT);
-		lblCdula.setFont(new Font("Ebrima", Font.PLAIN, 15));
-		lblCdula.setBounds(37, 31, 161, 20);
-		contentPane.add(lblCdula);
+		JLabel lblCedula = new JLabel("Cédula:");
+		lblCedula.setForeground(Color.WHITE);
+		lblCedula.setHorizontalAlignment(SwingConstants.RIGHT);
+		lblCedula.setFont(new Font("Ebrima", Font.PLAIN, 15));
+		lblCedula.setBounds(37, 31, 161, 20);
+		contentPane.add(lblCedula);
 		
-		JLabel lblNombreDelCliente = new JLabel("Nombre del cliente:");
-		lblNombreDelCliente.setForeground(Color.WHITE);
-		lblNombreDelCliente.setHorizontalAlignment(SwingConstants.RIGHT);
-		lblNombreDelCliente.setFont(new Font("Ebrima", Font.PLAIN, 15));
-		lblNombreDelCliente.setBounds(37, 72, 161, 20);
-		contentPane.add(lblNombreDelCliente);
+		JLabel lblNombreCliente = new JLabel("Nombre del cliente:");
+		lblNombreCliente.setForeground(Color.WHITE);
+		lblNombreCliente.setHorizontalAlignment(SwingConstants.RIGHT);
+		lblNombreCliente.setFont(new Font("Ebrima", Font.PLAIN, 15));
+		lblNombreCliente.setBounds(37, 72, 161, 20);
+		contentPane.add(lblNombreCliente);
 		
 		textEmail = new JTextField();
 		textEmail.setFont(new Font("Ebrima", Font.PLAIN, 14));
@@ -79,20 +77,6 @@ public class frmAgregarCliente extends JFrame {
 		textNombreCliente.setBounds(218, 72, 161, 20);
 		contentPane.add(textNombreCliente);
 		
-		textFechaNacimiento = new JTextField();
-		textFechaNacimiento.setToolTipText("Día");
-		textFechaNacimiento.setFont(new Font("Ebrima", Font.PLAIN, 14));
-		textFechaNacimiento.setColumns(10);
-		textFechaNacimiento.setBounds(218, 154, 161, 20);
-		contentPane.add(textFechaNacimiento);
-		
-		JLabel lblFechaNacimiento = new JLabel("Fecha de nacimiento:");
-		lblFechaNacimiento.setHorizontalAlignment(SwingConstants.RIGHT);
-		lblFechaNacimiento.setForeground(Color.WHITE);
-		lblFechaNacimiento.setFont(new Font("Ebrima", Font.PLAIN, 15));
-		lblFechaNacimiento.setBounds(19, 154, 178, 20);
-		contentPane.add(lblFechaNacimiento);
-		
 		JButton btnVolver = new JButton("Volver");
 		btnVolver.setFont(new Font("Ebrima", Font.BOLD, 15));
 		btnVolver.setBounds(233, 207, 121, 29);
@@ -108,26 +92,33 @@ public class frmAgregarCliente extends JFrame {
 		btnGuardarCliente.setBounds(83, 207, 121, 29);
 		contentPane.add(btnGuardarCliente);
 		btnGuardarCliente.addActionListener(new ActionListener(){
-			public void actionPerformed(ActionEvent e) 
-			{
-				
+			public void actionPerformed(ActionEvent e) {
+				//EJEMPLOPROFE cliente = new EJEMPLOPROFE();
 				clsCliente cliente = new clsCliente();
 				cliente.AgregarCliente();
-				JCheckBox chckbxNewCheckBox = new JCheckBox("Agregado",true);
-				chckbxNewCheckBox.setBounds(171, 255, 93, 21);
-				contentPane.add(chckbxNewCheckBox);
-				textEmail = new JTextField();
-				textCedula = new JTextField();
-				textNombreCliente = new JTextField();
-				
-				
-				
 			}
 		});
 		
+		textFechaNacimiento = new JTextField();
+		textFechaNacimiento.setToolTipText("Día");
+		textFechaNacimiento.setFont(new Font("Ebrima", Font.PLAIN, 14));
+		textFechaNacimiento.setColumns(10);
+		textFechaNacimiento.setBounds(218, 154, 161, 20);
+		contentPane.add(textFechaNacimiento);
 		
-		
-		
+		JLabel lblFechaNacimiento = new JLabel("Fecha de nacimiento:");
+		lblFechaNacimiento.setHorizontalAlignment(SwingConstants.RIGHT);
+		lblFechaNacimiento.setForeground(Color.WHITE);
+		lblFechaNacimiento.setFont(new Font("Ebrima", Font.PLAIN, 15));
+		lblFechaNacimiento.setBounds(19, 154, 178, 20);
+		contentPane.add(lblFechaNacimiento);
+		btnGuardarCliente.addActionListener(new ActionListener() {
+        	public void actionPerformed(ActionEvent e) {
+        		
+        		
+        		
+        	}
+        });
 		
 	}
 }

@@ -12,20 +12,7 @@ public class frmClientes extends JFrame implements ActionListener{
 	
     public frmClientes() {
     	
-    	Inicio.Cliente[0][0]= "98";
-    	Inicio.Cliente[0][1]= "Nicolas Vélez";
-    	Inicio.Cliente[0][2]= "nicorico@gmail.com";
-    	Inicio.Cliente[0][3]= "1997 - 03 - 22";
     	
-    	Inicio.Cliente[1][0]= "25";
-    	Inicio.Cliente[1][1]= "Teo Mauricio";
-    	Inicio.Cliente[1][2]= "teotemorboseo@gmail.com";
-    	Inicio.Cliente[1][3]= "1999 - 06 - 10";
-    	
-    	Inicio.Cliente[2][0]= "35";
-    	Inicio.Cliente[2][1]= "Areiza Mauricio";
-    	Inicio.Cliente[2][2]= "areizateareiza@gmail.com";
-    	Inicio.Cliente[2][3]= "1998 - 05 - 04";
     	
     	setTitle("Clientes");
     	setBounds(750, 300, 560, 457);

@@ -18,6 +18,8 @@ import javax.swing.SwingConstants;
 import javax.swing.JTextField;
 import javax.swing.JButton;
 import java.awt.Color;
+import javax.swing.JCheckBox;
+import javax.swing.JLayeredPane;
 
 public class frmAgregarCliente extends JFrame {
 
@@ -77,6 +79,20 @@ public class frmAgregarCliente extends JFrame {
 		textNombreCliente.setBounds(218, 72, 161, 20);
 		contentPane.add(textNombreCliente);
 		
+		textFechaNacimiento = new JTextField();
+		textFechaNacimiento.setToolTipText("Día");
+		textFechaNacimiento.setFont(new Font("Ebrima", Font.PLAIN, 14));
+		textFechaNacimiento.setColumns(10);
+		textFechaNacimiento.setBounds(218, 154, 161, 20);
+		contentPane.add(textFechaNacimiento);
+		
+		JLabel lblFechaNacimiento = new JLabel("Fecha de nacimiento:");
+		lblFechaNacimiento.setHorizontalAlignment(SwingConstants.RIGHT);
+		lblFechaNacimiento.setForeground(Color.WHITE);
+		lblFechaNacimiento.setFont(new Font("Ebrima", Font.PLAIN, 15));
+		lblFechaNacimiento.setBounds(19, 154, 178, 20);
+		contentPane.add(lblFechaNacimiento);
+		
 		JButton btnVolver = new JButton("Volver");
 		btnVolver.setFont(new Font("Ebrima", Font.BOLD, 15));
 		btnVolver.setBounds(233, 207, 121, 29);
@@ -92,33 +108,26 @@ public class frmAgregarCliente extends JFrame {
 		btnGuardarCliente.setBounds(83, 207, 121, 29);
 		contentPane.add(btnGuardarCliente);
 		btnGuardarCliente.addActionListener(new ActionListener(){
-			public void actionPerformed(ActionEvent e) {
-				//EJEMPLOPROFE cliente = new EJEMPLOPROFE();
+			public void actionPerformed(ActionEvent e) 
+			{
+				
 				clsCliente cliente = new clsCliente();
 				cliente.AgregarCliente();
+				JCheckBox chckbxNewCheckBox = new JCheckBox("Agregado",true);
+				chckbxNewCheckBox.setBounds(171, 255, 93, 21);
+				contentPane.add(chckbxNewCheckBox);
+				textEmail = new JTextField();
+				textCedula = new JTextField();
+				textNombreCliente = new JTextField();
+				
+				
+				
 			}
 		});
 		
-		textFechaNacimiento = new JTextField();
-		textFechaNacimiento.setToolTipText("Día");
-		textFechaNacimiento.setFont(new Font("Ebrima", Font.PLAIN, 14));
-		textFechaNacimiento.setColumns(10);
-		textFechaNacimiento.setBounds(218, 154, 161, 20);
-		contentPane.add(textFechaNacimiento);
 		
-		JLabel lblFechaNacimiento = new JLabel("Fecha de nacimiento:");
-		lblFechaNacimiento.setHorizontalAlignment(SwingConstants.RIGHT);
-		lblFechaNacimiento.setForeground(Color.WHITE);
-		lblFechaNacimiento.setFont(new Font("Ebrima", Font.PLAIN, 15));
-		lblFechaNacimiento.setBounds(19, 154, 178, 20);
-		contentPane.add(lblFechaNacimiento);
-		btnGuardarCliente.addActionListener(new ActionListener() {
-        	public void actionPerformed(ActionEvent e) {
-        		
-        		
-        		
-        	}
-        });
+		
+		
 		
 	}
 }

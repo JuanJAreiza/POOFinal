@@ -19,7 +19,6 @@ public class frmVerCliente extends JFrame {
 
 	private JPanel contentPane;
 	private JTextField textCedula;
-	private JButton btnEliminarReserva;
 
 	public frmVerCliente() {
 		setTitle("Eliminar reserva");
@@ -58,11 +57,11 @@ public class frmVerCliente extends JFrame {
         	}
         });
 		
-		btnEliminarReserva = new JButton("Ver");
-		btnEliminarReserva.setFont(new Font("Ebrima", Font.BOLD, 15));
-		btnEliminarReserva.setBounds(84, 197, 121, 29);
-		contentPane.add(btnEliminarReserva);
-		btnEliminarReserva.addActionListener(new ActionListener() {
+		JButton btnVerCliente = new JButton("Ver");
+		btnVerCliente.setFont(new Font("Ebrima", Font.BOLD, 15));
+		btnVerCliente.setBounds(84, 197, 121, 29);
+		contentPane.add(btnVerCliente);
+		btnVerCliente.addActionListener(new ActionListener() {
         	public void actionPerformed(ActionEvent e) {
         		
         		

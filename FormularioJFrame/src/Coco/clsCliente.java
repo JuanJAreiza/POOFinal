@@ -2,7 +2,6 @@ package Coco;
 
 import Clases.Inicio;
 import Formularios.frmAgregarCliente;
-import Formularios.EJEMPLOPROFE;
 
 public class clsCliente 
 {

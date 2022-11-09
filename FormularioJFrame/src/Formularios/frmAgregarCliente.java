@@ -5,6 +5,10 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+
+import Clases.Inicio;
+import Coco.clsCliente;
+
 import javax.swing.JLabel;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
@@ -18,11 +22,11 @@ import java.awt.Color;
 public class frmAgregarCliente extends JFrame {
 
 	private JPanel contentPane;
-	private JTextField textEmail;
-	private JTextField textCedula;
-	private JTextField textNombreCliente;
-	private JButton btnRegistrarReserva;
-	private JTextField textFechaDía;
+	public JTextField textEmail;
+	public JTextField textCedula;
+	public JTextField textNombreCliente;
+	public JButton btnGuardarCliente;
+	public JTextField textFechaNacimiento;
 
 	public frmAgregarCliente() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -83,17 +87,24 @@ public class frmAgregarCliente extends JFrame {
         	}
         });
 		
-		btnRegistrarReserva = new JButton("Guardar");
-		btnRegistrarReserva.setFont(new Font("Ebrima", Font.BOLD, 15));
-		btnRegistrarReserva.setBounds(83, 207, 121, 29);
-		contentPane.add(btnRegistrarReserva);
+		btnGuardarCliente = new JButton("Guardar");
+		btnGuardarCliente.setFont(new Font("Ebrima", Font.BOLD, 15));
+		btnGuardarCliente.setBounds(83, 207, 121, 29);
+		contentPane.add(btnGuardarCliente);
+		btnGuardarCliente.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent e) {
+				//frmCliente cliente = new frmCliente();
+				clsCliente cliente = new clsCliente();
+				cliente.AgregarCliente();
+			}
+		});
 		
-		textFechaDía = new JTextField();
-		textFechaDía.setToolTipText("Día");
-		textFechaDía.setFont(new Font("Ebrima", Font.PLAIN, 14));
-		textFechaDía.setColumns(10);
-		textFechaDía.setBounds(218, 154, 161, 20);
-		contentPane.add(textFechaDía);
+		textFechaNacimiento = new JTextField();
+		textFechaNacimiento.setToolTipText("Día");
+		textFechaNacimiento.setFont(new Font("Ebrima", Font.PLAIN, 14));
+		textFechaNacimiento.setColumns(10);
+		textFechaNacimiento.setBounds(218, 154, 161, 20);
+		contentPane.add(textFechaNacimiento);
 		
 		JLabel lblFechaNacimiento = new JLabel("Fecha de nacimiento:");
 		lblFechaNacimiento.setHorizontalAlignment(SwingConstants.RIGHT);
@@ -101,7 +112,7 @@ public class frmAgregarCliente extends JFrame {
 		lblFechaNacimiento.setFont(new Font("Ebrima", Font.PLAIN, 15));
 		lblFechaNacimiento.setBounds(19, 154, 178, 20);
 		contentPane.add(lblFechaNacimiento);
-		btnRegistrarReserva.addActionListener(new ActionListener() {
+		btnGuardarCliente.addActionListener(new ActionListener() {
         	public void actionPerformed(ActionEvent e) {
         		
         		

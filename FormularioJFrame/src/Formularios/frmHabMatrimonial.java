@@ -59,7 +59,7 @@ public class frmHabMatrimonial extends JFrame {
 		
 		JButton btnVolver = new JButton("Volver");
 		btnVolver.setFont(new Font("Ebrima", Font.BOLD, 15));
-		btnVolver.setBounds(233, 207, 121, 29);
+		btnVolver.setBounds(153, 233, 121, 29);
 		contentPane.add(btnVolver);
 		btnVolver.addActionListener(new ActionListener() {
         	public void actionPerformed(ActionEvent e) {
@@ -68,8 +68,8 @@ public class frmHabMatrimonial extends JFrame {
         });
 		
 		lblNewLabel = new JLabel("New label");
-		lblNewLabel.setIcon(new ImageIcon(frmHabMatrimonial.class.getResource("/Imagenes/Cliente.png")));
-		lblNewLabel.setBounds(146, 74, 161, 115);
+		lblNewLabel.setIcon(new ImageIcon(frmHabMatrimonial.class.getResource("/Imagenes/habitacion matrimionial.jpg")));
+		lblNewLabel.setBounds(57, 61, 342, 163);
 		contentPane.add(lblNewLabel);
 	}
 }

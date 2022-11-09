@@ -67,8 +67,8 @@ public class frmHabDoble extends JFrame {
         });
 		
 		lblNewLabel = new JLabel("New label");
-		lblNewLabel.setIcon(new ImageIcon(frmHabDoble.class.getResource("/Imagenes/Cliente.png")));
-		lblNewLabel.setBounds(146, 74, 161, 115);
+		lblNewLabel.setIcon(new ImageIcon(frmHabDoble.class.getResource("/Imagenes/habitacion doble.jpg")));
+		lblNewLabel.setBounds(57, 61, 342, 163);
 		contentPane.add(lblNewLabel);
 	}
 }

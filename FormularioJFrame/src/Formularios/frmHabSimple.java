@@ -61,9 +61,9 @@ public class frmHabSimple extends JFrame {
 		btnVolver.setBounds(156, 234, 121, 29);
 		contentPane.add(btnVolver);
 		
-		JLabel lblNewLabel = new JLabel("New label");
+		JLabel lblNewLabel = new JLabel("");
 		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel.setIcon(new ImageIcon(frmHabSimple.class.getResource("/Imagenes/HabSimple.jpg")));
+		lblNewLabel.setIcon(new ImageIcon(frmHabSimple.class.getResource("/Imagenes/HabSimple.png")));
 		lblNewLabel.setBounds(57, 61, 342, 163);
 		contentPane.add(lblNewLabel);
 		btnVolver.addActionListener(new ActionListener() {

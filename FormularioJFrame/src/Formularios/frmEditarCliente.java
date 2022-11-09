@@ -5,6 +5,9 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+
+import Coco.clsCliente;
+
 import javax.swing.JLabel;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
@@ -19,10 +22,10 @@ public class frmEditarCliente extends JFrame {
 
 	private JPanel contentPane;
 	private JTextField textCedula;
-	private JButton btnEliminarReserva;
+	private JButton btnEditarCliente;
 
 	public frmEditarCliente() {
-		setTitle("Eliminar reserva");
+		setTitle("Editar cliente");
     	setBounds(750, 300, 440, 332);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		contentPane = new JPanel();
@@ -57,17 +60,16 @@ public class frmEditarCliente extends JFrame {
         	}
         });
 		
-		btnEliminarReserva = new JButton("Editar");
-		btnEliminarReserva.setFont(new Font("Ebrima", Font.BOLD, 15));
-		btnEliminarReserva.setBounds(84, 197, 121, 29);
-		contentPane.add(btnEliminarReserva);
-		btnEliminarReserva.addActionListener(new ActionListener() {
+		btnEditarCliente = new JButton("Editar");
+		btnEditarCliente.setFont(new Font("Ebrima", Font.BOLD, 15));
+		btnEditarCliente.setBounds(84, 197, 121, 29);
+		contentPane.add(btnEditarCliente);
+		btnEditarCliente.addActionListener(new ActionListener() {
         	public void actionPerformed(ActionEvent e) {
-        		
-        		
-        		
-        	}
-        });
-		
+        				//EJEMPLOPROFE cliente = new EJEMPLOPROFE();
+        				clsCliente cliente = new clsCliente();
+        				cliente.EditarCliente();
+        			}
+        		});
 	}
 }

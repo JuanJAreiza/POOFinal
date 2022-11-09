@@ -58,7 +58,7 @@ public class frmHabDoble extends JFrame {
 		
 		JButton btnVolver = new JButton("Volver");
 		btnVolver.setFont(new Font("Ebrima", Font.BOLD, 15));
-		btnVolver.setBounds(233, 207, 121, 29);
+		btnVolver.setBounds(154, 243, 121, 29);
 		contentPane.add(btnVolver);
 		btnVolver.addActionListener(new ActionListener() {
         	public void actionPerformed(ActionEvent e) {

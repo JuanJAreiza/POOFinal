@@ -2,7 +2,6 @@ package Coco;
 
 import Clases.Inicio;
 import Formularios.frmAgregarCliente;
-import Formularios.frmCliente;
 
 public class clsCliente 
 {
@@ -11,7 +10,6 @@ public class clsCliente
 	public int Celular,Cc;
 	
 	public void AgregarCliente() {
-		frmCliente cliente = new frmCliente();
 		frmAgregarCliente agrega = new frmAgregarCliente();
 		
 		for (int i=0;i<=4;i++) {

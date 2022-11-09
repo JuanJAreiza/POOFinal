@@ -45,19 +45,19 @@ public class frmAgregarCliente extends JFrame {
 		lblEmail.setBounds(20, 112, 178, 20);
 		contentPane.add(lblEmail);
 		
-		JLabel lblCdula = new JLabel("Cédula:");
-		lblCdula.setForeground(Color.WHITE);
-		lblCdula.setHorizontalAlignment(SwingConstants.RIGHT);
-		lblCdula.setFont(new Font("Ebrima", Font.PLAIN, 15));
-		lblCdula.setBounds(37, 31, 161, 20);
-		contentPane.add(lblCdula);
+		JLabel lblCedula = new JLabel("Cédula:");
+		lblCedula.setForeground(Color.WHITE);
+		lblCedula.setHorizontalAlignment(SwingConstants.RIGHT);
+		lblCedula.setFont(new Font("Ebrima", Font.PLAIN, 15));
+		lblCedula.setBounds(37, 31, 161, 20);
+		contentPane.add(lblCedula);
 		
-		JLabel lblNombreDelCliente = new JLabel("Nombre del cliente:");
-		lblNombreDelCliente.setForeground(Color.WHITE);
-		lblNombreDelCliente.setHorizontalAlignment(SwingConstants.RIGHT);
-		lblNombreDelCliente.setFont(new Font("Ebrima", Font.PLAIN, 15));
-		lblNombreDelCliente.setBounds(37, 72, 161, 20);
-		contentPane.add(lblNombreDelCliente);
+		JLabel lblNombreCliente = new JLabel("Nombre del cliente:");
+		lblNombreCliente.setForeground(Color.WHITE);
+		lblNombreCliente.setHorizontalAlignment(SwingConstants.RIGHT);
+		lblNombreCliente.setFont(new Font("Ebrima", Font.PLAIN, 15));
+		lblNombreCliente.setBounds(37, 72, 161, 20);
+		contentPane.add(lblNombreCliente);
 		
 		textEmail = new JTextField();
 		textEmail.setFont(new Font("Ebrima", Font.PLAIN, 14));

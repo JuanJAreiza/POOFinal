@@ -96,6 +96,7 @@ public class frmRecepcionista extends JFrame implements ActionListener{
     			setVisible(false);
         	}
         });
+        
         mntmClientes.setBackground(new Color(238, 238, 238));
         mntmClientes.setFont(new Font("Ebrima", Font.PLAIN, 14));
         menuRecepcionista.add(mntmClientes);
@@ -120,6 +121,7 @@ public class frmRecepcionista extends JFrame implements ActionListener{
         JMenuItem mntmSalir_1 = new JMenuItem("Salir");
         mntmSalir_1.setFont(new Font("Ebrima", Font.PLAIN, 14));
         menuOpciones.add(mntmSalir_1);
+        
     }
 
 	public void actionPerformed(ActionEvent eventoClick) {

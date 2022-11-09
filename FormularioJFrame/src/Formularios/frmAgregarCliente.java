@@ -116,7 +116,6 @@ public class frmAgregarCliente extends JFrame {
         	public void actionPerformed(ActionEvent e) {
         		
         		
-        		
         	}
         });
 		

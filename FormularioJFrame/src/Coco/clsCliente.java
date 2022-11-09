@@ -13,7 +13,6 @@ public class clsCliente
 	public void AgregarCliente() 
 	{
 		
-		EJEMPLOPROFE cliente = new EJEMPLOPROFE();
 		frmAgregarCliente agrega = new frmAgregarCliente();
 		
 		for (int i=0;i<=4;i++) {

@@ -5,7 +5,7 @@ public class HSimple extends Habitacion{
 	static Scanner sc = new Scanner(System.in);
 	
 	String foto;
-	int precio = 0;
+	int precio = 50000;
 	
 	
 	public void MostrarFoto() {
@@ -14,7 +14,7 @@ public class HSimple extends Habitacion{
 	
 	public String MostrarPrecio() {
 		
-		precio = 50000;
+		
 		String nprecio = Integer.toString(precio);
 		
 		return nprecio;

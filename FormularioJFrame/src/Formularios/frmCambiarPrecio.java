@@ -48,9 +48,11 @@ public class frmCambiarPrecio extends JFrame {
 		textCambioPrecio.setBounds(132, 174, 161, 20);
 		contentPane.add(textCambioPrecio);
 		
+		
+		String tipohab[] = {"Habitación Simple", "Habitación Doble", "Habitación Matrimonial"}; 
 		JComboBox cbxHabitación = new JComboBox();
 		cbxHabitación.setFont(new Font("Arial", Font.PLAIN, 14));
-		cbxHabitación.setModel(new DefaultComboBoxModel(new String[] {"Habitación Simple", "Habitación Doble", "Habitación Matrimonial"}));
+		cbxHabitación.setModel(new DefaultComboBoxModel(tipohab));
 		cbxHabitación.setBounds(66, 80, 298, 22);
 		contentPane.add(cbxHabitación);
 		
@@ -79,6 +81,8 @@ public class frmCambiarPrecio extends JFrame {
 		contentPane.add(lblNuevoPrecio);
 		btnActualizarPrecio.addActionListener(new ActionListener() {
         	public void actionPerformed(ActionEvent e) {
+        		
+        		//PARA ACTUALIZAR LOS PRECIOS SE DEBE VERIFICAR EL TIPO DE HABITACIONES EN LA QUE ESTAMOS.
         		
         		
         		

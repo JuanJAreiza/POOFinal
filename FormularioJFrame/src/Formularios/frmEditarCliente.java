@@ -66,7 +66,6 @@ public class frmEditarCliente extends JFrame {
 		contentPane.add(btnEditarCliente);
 		btnEditarCliente.addActionListener(new ActionListener() {
         	public void actionPerformed(ActionEvent e) {
-        				//EJEMPLOPROFE cliente = new EJEMPLOPROFE();
         				clsCliente cliente = new clsCliente();
         				cliente.EditarCliente();
         			}

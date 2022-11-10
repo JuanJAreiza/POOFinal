@@ -43,6 +43,12 @@ public class frmMenu extends JFrame implements ActionListener{
         btnSalir.setFont(new Font("Ebrima", Font.BOLD, 15));
         btnSalir.setBounds(208, 287, 121, 29);
         getContentPane().add(btnSalir);
+        btnSalir.addActionListener(new ActionListener() {
+        	public void actionPerformed(ActionEvent e) {
+        		System.exit(0);
+        	}
+        });
+        
         JMenuBar MenuBar = new JMenuBar();
         MenuBar.setBackground(new Color(0, 0, 0));
         MenuBar.setFont(new Font("Arial", Font.PLAIN, 14));

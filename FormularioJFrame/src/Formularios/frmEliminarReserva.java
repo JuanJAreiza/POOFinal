@@ -5,6 +5,9 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+
+import Coco.clsReservacion;
+
 import javax.swing.JLabel;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
@@ -18,7 +21,7 @@ import java.awt.Color;
 public class frmEliminarReserva extends JFrame {
 
 	private JPanel contentPane;
-	private JTextField textCedula;
+	public JTextField textBuscarCedula;
 	private JButton btnEliminarReserva;
 
 	public frmEliminarReserva() {
@@ -39,11 +42,11 @@ public class frmEliminarReserva extends JFrame {
 		lblBuscarCdula.setBounds(10, 62, 406, 29);
 		contentPane.add(lblBuscarCdula);
 		
-		textCedula = new JTextField();
-		textCedula.setFont(new Font("Ebrima", Font.PLAIN, 14));
-		textCedula.setColumns(10);
-		textCedula.setBounds(135, 115, 161, 20);
-		contentPane.add(textCedula);
+		textBuscarCedula = new JTextField();
+		textBuscarCedula.setFont(new Font("Ebrima", Font.PLAIN, 14));
+		textBuscarCedula.setColumns(10);
+		textBuscarCedula.setBounds(135, 115, 161, 20);
+		contentPane.add(textBuscarCedula);
 		
 		JButton btnVolver = new JButton("Volver");
 		btnVolver.setFont(new Font("Ebrima", Font.BOLD, 15));
@@ -55,15 +58,14 @@ public class frmEliminarReserva extends JFrame {
         	}
         });
 		
-		btnEliminarReserva = new JButton("Cambiar");
+		btnEliminarReserva = new JButton("Eliminar");
 		btnEliminarReserva.setFont(new Font("Ebrima", Font.BOLD, 15));
 		btnEliminarReserva.setBounds(84, 197, 121, 29);
 		contentPane.add(btnEliminarReserva);
 		btnEliminarReserva.addActionListener(new ActionListener() {
         	public void actionPerformed(ActionEvent e) {
-        		
-        		
-        		
+        		clsReservacion reservar = new clsReservacion();
+				reservar.EliminarReserva();
         	}
         });
 		

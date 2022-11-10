@@ -65,7 +65,7 @@ public class frmVerCliente extends JFrame {
         	}
         });
 		
-		btnVerCliente = new JButton("Ver");
+		JButton btnVerCliente = new JButton("Ver");
 		btnVerCliente.setFont(new Font("Ebrima", Font.BOLD, 15));
 		btnVerCliente.setBounds(84, 236, 121, 29);
 		contentPane.add(btnVerCliente);

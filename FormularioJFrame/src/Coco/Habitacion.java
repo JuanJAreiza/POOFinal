@@ -6,10 +6,6 @@ public class Habitacion {
 	
 	static int numeroHabitacion = 0;
 	
-	public void MostrarFoto() {
-		
-	}
-	
 	public int MostrarPrecio(int precio) {
 		return precio;
 		

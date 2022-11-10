@@ -7,11 +7,6 @@ public class HDoble extends Habitacion{
 	String foto;
 	int precio = 0;
 	
-	
-	public void MostrarFoto() {
-		
-	}
-	
 	public String MostrarPrecio() {
 		
 		precio = 100000;

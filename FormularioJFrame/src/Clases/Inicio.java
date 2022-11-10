@@ -56,6 +56,12 @@ public class Inicio {
     	if (JOptionPane.OK_OPTION == respuesta){
         	frmMenu frmMenu = new frmMenu();
         	frmMenu.setVisible(true);
+        	
+        	for (int i = 0 ; i < 5 ; i++)
+        	{
+        			System.out.println(vectorClientes[i]);
+        		
+        	}
         }
     }    
 }

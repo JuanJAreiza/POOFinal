@@ -87,11 +87,11 @@ public class frmVerCliente extends JFrame {
 				
 				//BUSCAR
 				for(int i=0;i<Inicio.vectorClientes.length;i++) {
-					/*if(Inicio.vectorClientes[i] == null) {
+					if(Inicio.vectorClientes[i] == null) {
 						System.out.println("Nulo en la posición " + i);
 						avisarNulo();
 						return;
-					}*/
+					}
 					if(Integer.valueOf(cedulaBuscar) == Inicio.vectorClientes[i].getCedula()){
 						mostrarCliente(Inicio.vectorClientes[i]);
 						return;

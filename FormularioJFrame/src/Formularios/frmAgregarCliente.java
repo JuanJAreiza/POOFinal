@@ -93,7 +93,6 @@ public class frmAgregarCliente extends JFrame {
 		contentPane.add(btnGuardarCliente);
 		btnGuardarCliente.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent e) {
-				//EJEMPLOPROFE cliente = new EJEMPLOPROFE();
 				clsCliente cliente = new clsCliente();
 				cliente.AgregarCliente();
 			}

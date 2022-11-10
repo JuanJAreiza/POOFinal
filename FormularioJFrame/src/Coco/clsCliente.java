@@ -12,9 +12,9 @@ public class clsCliente
 		frmAgregarCliente agregar = new frmAgregarCliente();
 		
 		for (int i=0;i<=4;i++) {
-			clsCliente clsCliente = new clsCliente();
-			clsCliente.Comparador(Inicio.Cliente[i][0], null);
-			//if(Inicio.Cliente[i][0] == null)
+			//clsCliente clsCliente = new clsCliente();
+			//clsCliente.Comparador(Inicio.Cliente[i][0], null);
+			if(Inicio.Cliente[i][0] == null)
 			{
 				Inicio.Cliente[i][0] = agregar.textCedula.getText();
 				Inicio.Cliente[i][1] = agregar.textNombreCliente.getText();
@@ -46,9 +46,9 @@ public class clsCliente
 		frmVerCliente ver = new frmVerCliente();
 		
 		for (int i=0;i<=4;i++) {
-			clsCliente clsCliente = new clsCliente();
-			clsCliente.Comparador(Inicio.Cliente[i][0], ver.textBuscarCedula.getText());
-			//if(Inicio.Cliente[i][0] == ver.textBuscarCedula.getText()) //Volverlo un metodo, hacer la comparativa. Hacerlo un booleano, que retorne true o false.
+			/*clsCliente clsCliente = new clsCliente();
+			clsCliente.Comparador(Inicio.Cliente[i][0], ver.textBuscarCedula.getText());*/
+			if(Inicio.Cliente[i][0] == ver.textBuscarCedula.getText()) //Volverlo un metodo, hacer la comparativa. Hacerlo un booleano, que retorne true o false.
 			{
 				ver.textCedula.setText(Inicio.Cliente[i][0]);
 				ver.textNombre.setText(Inicio.Cliente[i][1]);
@@ -58,12 +58,12 @@ public class clsCliente
 	}	
 	}
 	
-	public boolean Comparador(String comp1, String comp2) {
+	/*public boolean Comparador(String comp1, String comp2) {
 		boolean resultado = false;
 		if(comp1 == comp2) {
 			resultado = true;
 		}
 		return resultado;
-	}
+	}*/
 	
 }

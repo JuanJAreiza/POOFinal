@@ -26,19 +26,9 @@ public class clsCliente
 	
 	public void EditarCliente()
 	{
-		frmEditarCliente cliente = new frmEditarCliente();
+		frmEditarCliente editar = new frmEditarCliente();
 		
-		for (int i=0;i<=4;i++) {
-			if(Inicio.Cliente[i][0] == cliente.textBuscarCedula.getText())
-			{
-				//Buscar la forma de seleccionar que quiere editar!
-				
-				/*Inicio.Cliente[i][0] = cliente.textCedula.getText();
-				Inicio.Cliente[i][1] = cliente.textNombreCliente.getText();
-				Inicio.Cliente[i][2] = cliente.textEmail.getText();
-				Inicio.Cliente[i][3] = cliente.textFechaNacimiento.getText();*/
-			}
-		}
+		
 		}
 	
 	public void VerCliente()

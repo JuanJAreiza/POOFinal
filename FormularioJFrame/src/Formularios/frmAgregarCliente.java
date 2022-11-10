@@ -119,6 +119,7 @@ public class frmAgregarCliente extends JFrame {
 					Inicio.vectorClientes[i] = clienteNuevo;
 					}
 				}
+				
 				avisarCorrecto();
 				return;
 			}

@@ -116,20 +116,4 @@ public class frmReservar extends JFrame	{
 		lblCantidadDias.setBounds(54, 134, 161, 20);
 		contentPane.add(lblCantidadDias);
 	}
-	
-	void Reservar(String Cedula) {
-		
-		boolean habitual = false;
-		Inicio ini = new Inicio();
-		
-		for(int i = 0; i<=4; i++) {
-			
-			if(Inicio.Cliente[i][0] == Cedula)
-			{
-				habitual=true;
-			}
-		}
-		
-	
-	}
 }

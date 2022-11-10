@@ -12,8 +12,6 @@ public class frmClientes extends JFrame implements ActionListener{
 	
     public frmClientes() {
     	
-    	
-    	
     	setTitle("Clientes");
     	setBounds(750, 300, 560, 457);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

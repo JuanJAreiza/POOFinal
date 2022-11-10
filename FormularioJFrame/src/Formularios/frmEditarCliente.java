@@ -21,7 +21,7 @@ import java.awt.Color;
 public class frmEditarCliente extends JFrame {
 
 	private JPanel contentPane;
-	private JTextField textCedula;
+	public JTextField textBuscarCedula;
 	private JButton btnEditarCliente;
 
 	public frmEditarCliente() {
@@ -42,11 +42,11 @@ public class frmEditarCliente extends JFrame {
 		lblBuscarCdula.setBounds(-35, 70, 420, 20);
 		contentPane.add(lblBuscarCdula);
 		
-		textCedula = new JTextField();
-		textCedula.setFont(new Font("Ebrima", Font.PLAIN, 14));
-		textCedula.setColumns(10);
-		textCedula.setBounds(135, 115, 161, 20);
-		contentPane.add(textCedula);
+		textBuscarCedula = new JTextField();
+		textBuscarCedula.setFont(new Font("Ebrima", Font.PLAIN, 14));
+		textBuscarCedula.setColumns(10);
+		textBuscarCedula.setBounds(135, 115, 161, 20);
+		contentPane.add(textBuscarCedula);
 		
 		JButton btnVolver = new JButton("Volver");
 		btnVolver.setFont(new Font("Ebrima", Font.BOLD, 15));

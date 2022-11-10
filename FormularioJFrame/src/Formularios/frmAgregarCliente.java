@@ -7,9 +7,12 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
 import Clases.Inicio;
+import Coco.Cliente;
 import Coco.clsCliente;
 
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -93,8 +96,31 @@ public class frmAgregarCliente extends JFrame {
 		contentPane.add(btnGuardarCliente);
 		btnGuardarCliente.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent e) {
-				clsCliente cliente = new clsCliente();
-				cliente.AgregarCliente();
+				
+				/*clsCliente cliente = new clsCliente();
+				cliente.AgregarCliente();*/
+				
+				//Crear un objeto de la clase Cliente
+				Cliente clienteNuevo = new Cliente();
+				
+				//Hacer set de cada uno
+				clienteNuevo.setCedula(Integer.valueOf(textCedula.getText()));
+				clienteNuevo.setNombre(textNombreCliente.getText());
+				clienteNuevo.setEmail(textEmail.getText());
+				clienteNuevo.setFechaNacimiento(textFechaNacimiento.getText());
+				
+				
+				//Set: Establecer el dato
+				//Get: Obtener el dato
+				
+				//Guardar en el vector /Revisar nulo, return
+				for(int i=0;i<Inicio.vectorClientes.length;i++) {
+					if(Inicio.vectorClientes[i] == null) {
+					Inicio.vectorClientes[i] = clienteNuevo;
+					}
+				}
+				avisarCorrecto();
+				return;
 			}
 		});
 		
@@ -111,12 +137,13 @@ public class frmAgregarCliente extends JFrame {
 		lblFechaNacimiento.setFont(new Font("Ebrima", Font.PLAIN, 15));
 		lblFechaNacimiento.setBounds(19, 154, 178, 20);
 		contentPane.add(lblFechaNacimiento);
-		btnGuardarCliente.addActionListener(new ActionListener() {
-        	public void actionPerformed(ActionEvent e) {
-        		
-        		
-        	}
-        });
-		
+	}
+	
+	private void avisarCorrecto() {
+		JOptionPane.showMessageDialog(null, "Cliente guardado correctamente.");
+		textCedula.setText("");
+		textNombreCliente.setText("");
+		textEmail.setText("");
+		textFechaNacimiento.setText("");
 	}
 }
